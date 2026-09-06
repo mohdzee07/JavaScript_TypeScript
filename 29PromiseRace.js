@@ -12,7 +12,7 @@ const c2 = new Promise((resolve,reject)=>{
     setTimeout(() => {
         
         reject("Fail")
-    }, 500);
+    }, 5000);
 })
 
 Promise.race([c1,c2])

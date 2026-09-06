@@ -1,15 +1,21 @@
 
-    console.log("This is if else statement");
-    const flag = false;
+function chknumber(number)
+{
+    if(number>0)
+    {
+        console.log("no is +ve")
+    }
 
-
-    if(flag){
-        console.log("This is true");
+    else if(number<0)
+    {
+        console.log("no is -ve")
     }
     else{
-        console.log("This is false");
-    }
+         console.log("No number")
+}
+}
 
+chknumber(-1)
     console.log("This is while loop");
     let i =0;
     while(i<5){
