@@ -21,12 +21,13 @@ console.log(s1.toLowerCase());
 let s2 = "javascript" 
 //In slice method : Start index, End index(End index wont take but it will just stop there)
 console.log("%%%%%%slice$%%%%%%")
-console.log(s2.slice(1,4))//this is means strat from 1 and end at 6-NOTE: it will stop at 6 and give values onlt unitl 5
+console.log(s2.slice(1,4))//ava--this is means strat from 1 and end at 6-NOTE: it will stop at 6 and give values onlt unitl 5
 
 //3.In Substring method ; 
-console.log(s1.substring(2,6))//In subtrung it will strart at the index no 2 and ends at 6 but wont inlcude 6the index value
+//str.substr(start, length)
+console.log(s1.substring(2,6))//esha--In subtrung it will strart at the index no 2 and ends at 6 but wont inlcude 6the index value
 
-console.log(s1.substring(-2,4))//It means all -ve values will be converted to 0 s its prints "ze" 2 is the index to stop
+console.log(s1.substring(-2,4))//zees-It means all -ve values will be converted to 0 s its prints "zees" 2 is the index to stop
 
 //4. Split method
 

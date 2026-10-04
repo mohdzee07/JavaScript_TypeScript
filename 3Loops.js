@@ -23,7 +23,7 @@ chknumber(-1)
         i++;
     }
 
-    console.log("This is while loop");
+    console.log("This is do while loop");
     //do while is used to execute the do loop at least once, even if the condition is false
     let j=10;
     do{
