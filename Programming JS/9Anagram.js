@@ -1,5 +1,7 @@
 function isAnagram(str1,str2)
 {
+
+    //step1 : FInd i bot the strings are  of same length
     if(str1.length !== str2.length)
     {
        return false;
@@ -7,6 +9,7 @@ function isAnagram(str1,str2)
 
     let count = {}
 
+    //step 2: find fre of each char in str1
     for(let i =0; i<str1.length ;i++)
     {
             let ch = str1[i];
@@ -19,6 +22,8 @@ function isAnagram(str1,str2)
             }
     }
 
+
+    //step 3: remove each char from string
        for(let i =0; i<str2.length ;i++)
        {
          let ch =str2[i]

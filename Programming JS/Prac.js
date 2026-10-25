@@ -1,19 +1,38 @@
-function sumofarray(arr, sum)
+function anagram(str1,str2)
 {
-    let num =[18]
-
-    for(let i=0;i<arr.length; i++)
+    if(str1 !== str2)
     {
-        for(let j= i+1 ; i<arr.length; j++)
-        {
-          if(arr[i]+arr[j] === sum)
-          {
-               return  [i,j]
-          }
-        }
-
+        return false;
     }
-    return [];
+
+     let count ={}
+    for( let i=0; i<str1.length ; i++)
+{
+    let ch = str1[i];
+     
+        if(count[ch])
+        {
+           count[ch]++;   
+        }
+        else{
+             count[ch] =1;
+        }
+    }
+
+    for( let j=0; j<=str2.length ;j++ )
+    {
+        let ch1=str2[j];
+
+        if(!count[ch])
+        {
+            return false
+        }
+        else{
+             count[ch]--;  
+        }
+    }
+
+    return true; 
 }
 
-console.log(sumofarray([1,2,7,11]),18)
+console.log(anagram('listen','silent'))
