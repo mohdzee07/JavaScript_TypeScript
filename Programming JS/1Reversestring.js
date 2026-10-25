@@ -4,7 +4,7 @@ function rev(name)
 
     for(let i=name.length-1; i>=0 ;i--)
     {
-        rename = rename +name[i]
+        rename = rename + name[i]
     }
     return rename
 

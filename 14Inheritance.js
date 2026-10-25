@@ -10,7 +10,8 @@ class Pet extends Person{
         return "Bluecross"
     }
 
-//mandatory to create a constructor in child class if  parent has a constructor otherwise it will give an error because the child class will not be able to access the properties of the parent class without a constructor in the child class      
+//mandatory to create a constructor in child class if  parent has a constructor otherwise it will give an error
+//  because the child class will not be able to access the properties of the parent class without a constructor in the child class      
     constructor(fname,lname)
     {
          //call parent class constructor
@@ -22,6 +23,7 @@ class Pet extends Person{
 
 
  let pet1=new Pet("Tom","Jerry")
- console.log(pet1.fullname()); // This will call the fullname method of the parent class Person and print the full name of the pet, which is "Tom Jerry"
+ console.log(pet1.fullname()); // This will call the fullname method of the parent class Person and print the full name of the pet,
+ //  which is "Tom Jerry"
  //console.log(pet1.age); 
  console.log(pet1.location); // This will call the location getter method of the child class Pet and print the location of the pet, which is "Bluecross"

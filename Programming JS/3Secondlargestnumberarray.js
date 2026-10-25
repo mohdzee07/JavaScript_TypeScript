@@ -1,6 +1,4 @@
-function secondlargest(arr)
-{
-    //[10,20,15,5]
+ //[10,20,15,5]
 
 // Initial:
 // largest = 10
@@ -25,25 +23,23 @@ function secondlargest(arr)
 // secondLargest = 15
 
 
-    let largest =  arr[0]
-    let seclargest  = arr[0]
+function secondlargest(arr) {
+    let largest = arr[0];
+    let seclargest = -Infinity;
 
-    for (let i=1; i <= arr.length ; i++)
-    {
+    for (let i = 1; i < arr.length; i++) {
 
-   
-        if( arr[i] > largest)
-        {
-            largest = arr[i]
-            seclargest = largest // second largest(Infinity)
+        if (arr[i] > largest) {
+            seclargest = largest;
+            largest = arr[i];
         }
 
-        else if ( arr[i] > seclargest && arr[i] !== largest)
-        {
-            seclargest = arr[i]
+        else if (arr[i] > seclargest && arr[i] !== largest) {
+            seclargest = arr[i];
         }
     }
-     return seclargest
+
+    return seclargest;
 }
 
-console.log(secondlargest([5,10,15,20]))
+console.log(secondlargest([5, 10, 15, 20])); // 15

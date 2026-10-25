@@ -14,9 +14,14 @@ const Person =  require('./13ClasinJs') // This will import the Person class fro
         }
     }
 
-    console.log(person.fullname()); // This will call the fullname method of the person object and print the full name, which is "Tim Smith"
+    
+    console.log(person.fullname()); // This will call the fullname method of the person object and print the full name, 
+    // which is "Tim Smith"
+    console.log("*111")
     console.log(person); // This will print the entire person object, which is {firstname: 'Tim', lastName: 'Smith'}
+    console.log("*22222")
     console.log(person.firstname); // This will print the value of the firstname property, which is "Tim"
+    console.log("3***")
     console.log(person.lastName); // This will print the value of the lastName property, which is "Smith"
 
     //Array notataion

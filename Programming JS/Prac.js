@@ -1,21 +1,19 @@
-function freq(str)
+function sumofarray(arr, sum)
 {
+    let num =[18]
 
-    let freqq= {};
-
-    for (let i = 0; i<=str.length ; i++)
+    for(let i=0;i<arr.length; i++)
     {
-           if(freqq[str[i]])
-           {
-             freqq[str[i]]++;
-           }
-           else{
-              freqq[str[i]] = 1;
-           }
-    }
+        for(let j= i+1 ; i<arr.length; j++)
+        {
+          if(arr[i]+arr[j] === sum)
+          {
+               return  [i,j]
+          }
+        }
 
-     return freqq;
-    
+    }
+    return [];
 }
 
-console.log(freq("banana"))
+console.log(sumofarray([1,2,7,11]),18)

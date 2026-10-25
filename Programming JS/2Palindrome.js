@@ -1,18 +1,16 @@
-// function palindrome(str)
-// {
-//      let palindromestring ='';
+function palindrome(str) {
+    let palindromestring = '';
 
-//      for (let i=str.length-1;i>=0;i--)
-//      {
-//          palindromestring = palindromestring + str[i]
-//      }
+    for (let i = str.length - 1; i >= 0; i--) {
+        palindromestring = palindromestring + str[i]
+    }
 
-//      return palindromestring === str
+    return palindromestring === str
 
-// }
+}
 
-// console.log(palindrome("hello"))
-// console.log(palindrome("racecar"))
+console.log(palindrome("hello"))
+console.log(palindrome("racecar"))
 
 
 
